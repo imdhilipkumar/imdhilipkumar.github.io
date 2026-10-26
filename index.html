@@ -4,165 +4,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhilip Kumar | Data Engineer</title>
-  <meta name="description" content="Dhilip Kumar's Data Engineering portfolio featuring Azure, SQL, Python, PySpark and data pipeline projects.">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b1120;
-      color: #e5e7eb;
-      line-height: 1.7;
-    }
-    .container { max-width: 1000px; margin: auto; padding: 24px; }
-    nav {
-      display: flex; justify-content: space-between;
-      align-items: center; flex-wrap: wrap; gap: 16px;
-      padding: 20px 0;
-    }
-    nav a, a { color: #67e8f9; text-decoration: none; }
-    nav .links { display: flex; gap: 18px; flex-wrap: wrap; }
-    .hero { padding: 90px 0 70px; }
-    .tag { color: #67e8f9; letter-spacing: 2px; }
-    h1 { font-size: clamp(36px, 7vw, 60px); line-height: 1.15; margin: 18px 0; }
-    h2 { font-size: 28px; margin-bottom: 20px; }
-    h3 { color: #fff; margin-bottom: 10px; }
-    p { color: #b7c2d3; margin-bottom: 14px; }
-    section { padding: 42px 0; border-top: 1px solid #263247; }
-    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-    .btn { padding: 11px 18px; border: 1px solid #67e8f9; border-radius: 8px; }
-    .primary { background: #67e8f9; color: #0b1120; font-weight: bold; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-    .card { background: #131d30; padding: 22px; border: 1px solid #263247; border-radius: 12px; }
-    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .skills span { padding: 7px 12px; background: #17283b; border-radius: 6px; color: #a5f3fc; }
-    footer { padding: 28px 0; color: #94a3b8; text-align: center; }
-  </style>
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Dhilip Kumar — Azure Data Engineer specializing in data pipelines, SQL, Python, PySpark, and cloud data engineering.">
+  <title>Dhilip Kumar | Azure Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <strong>Dhilip Kumar</strong>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+  <header class="header">
+    <a class="brand" href="#home"><span class="brand-mark">DK</span> dhilip<span class="accent">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-button" href="#contact">Contact ↗</a>
     </nav>
+  </header>
 
-    <header class="hero">
-      <div class="tag">DATA ENGINEERING PORTFOLIO</div>
-      <h1>Hi, I'm Dhilip Kumar.<br>
-        <span style="color:#67e8f9">Data Engineer</span>
-      </h1>
-      <p>
-        I build data pipelines and work with SQL, Python, PySpark
-        and Azure data services to transform raw data into
-        reliable, analytics-ready datasets.
-      </p>
-      <div class="buttons">
-        <a class="btn primary" href="#projects">Explore My Projects</a>
-        <a class="btn" href="https://github.com/imdhilipkumar"
-           target="_blank" rel="noopener">GitHub Profile</a>
-        <a class="btn" href="https://linkedin.com/in/dhilipkumar20"
-           target="_blank" rel="noopener">LinkedIn</a>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> AZURE DATA ENGINEER</div>
+        <h1>Turning raw data into <span class="gradient">reliable pipelines.</span></h1>
+        <p class="lead">Hi, I'm <strong>Dhilip Kumar</strong>. I build data workflows that ingest, transform, validate, and prepare data for analytics using Azure services, SQL, Python, and PySpark.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">Explore my projects ↓</a>
+          <a class="btn btn-secondary" href="https://github.com/imdhilipkumar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+        <div class="quick-skills">
+          <span>⌘ SQL</span><span>⌘ Python</span><span>◈ Azure Data Factory</span><span>◈ PySpark</span>
+        </div>
       </div>
-    </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a software engineering graduate focused on Data Engineering,
-        with experience as a Data Analyst I supporting Prime Video Sports
-        through Adecco at Amazon Development Center, Chennai.
-      </p>
-      <p>
-        My interests include ETL/ELT development, data quality,
-        incremental processing, cloud data platforms and building
-        dependable data pipelines.
-      </p>
+      <div class="pipeline-card">
+        <div class="card-top">
+          <span class="window-dots">● ● ●</span>
+          <span>data_pipeline.flow</span>
+          <span class="live">PIPELINE OVERVIEW</span>
+        </div>
+        <div class="pipeline">
+          <p class="pipeline-caption">DATA ENGINEERING WORKFLOW <span>01—04</span></p>
+          <div class="pipeline-node">
+            <span class="node-icon blue">⇢</span>
+            <div><strong>Data Sources</strong><small>Events · JSON · Files</small></div>
+            <span class="node-num">01</span>
+          </div>
+          <div class="connector"></div>
+          <div class="pipeline-node">
+            <span class="node-icon purple">⌁</span>
+            <div><strong>Data Ingestion</strong><small>Azure Event Hubs</small></div>
+            <span class="node-num">02</span>
+          </div>
+          <div class="connector"></div>
+          <div class="pipeline-node">
+            <span class="node-icon cyan">⟳</span>
+            <div><strong>Transform & Validate</strong><small>Azure Data Factory</small></div>
+            <span class="node-num">03</span>
+          </div>
+          <div class="connector"></div>
+          <div class="pipeline-node">
+            <span class="node-icon green">▤</span>
+            <div><strong>Analytics-Ready Data</strong><small>Storage · Azure SQL</small></div>
+            <span class="node-num">04</span>
+          </div>
+          <div class="pipeline-footer"><span>● Modular pipeline design</span><span>AZURE / DATA</span></div>
+        </div>
+        <div class="floating-tag tag-top">↗ Incremental loading</div>
+        <div class="floating-tag tag-bottom">✓ Data quality checks</div>
+      </div>
+      <a href="#about" class="scroll-cue">↓ SCROLL TO EXPLORE</a>
     </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>SQL</span>
-        <span>Python</span>
-        <span>PySpark</span>
-        <span>Apache Spark</span>
-        <span>Azure Data Factory</span>
-        <span>Azure Storage</span>
-        <span>Azure SQL</span>
-        <span>Amazon S3</span>
-        <span>Amazon Redshift</span>
-        <span>Amazon Athena</span>
-        <span>Git & GitHub</span>
-        <span>ETL/ELT</span>
+    <section class="section" id="about">
+      <p class="section-label">01 / ABOUT ME</p>
+      <div class="about-grid">
+        <h2>Engineering data flows with <span class="muted">purpose.</span></h2>
+        <div>
+          <p class="body-text">I'm focused on building reliable data workflows that move information from source systems into clean, structured, analytics-ready datasets.</p>
+          <p class="body-text">My hands-on work includes PureMilk, an end-to-end Smart Dairy Milk Silo data engineering project using Azure services. I also bring data analysis experience working with SQL, Python, and analytics tools.</p>
+          <div class="facts">
+            <div><strong>Azure</strong><span>Cloud data workflows</span></div>
+            <div><strong>ETL</strong><span>Data transformation</span></div>
+            <div><strong>SQL</strong><span>Querying & validation</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Smart Dairy Milk Silo Pipeline</h3>
-          <p>
-            An end-to-end Azure data engineering project involving
-            event ingestion, data validation, Bronze/Silver/Gold
-            transformations, rejected records and incremental loading.
-          </p>
-          <p><strong>Tools:</strong> Azure Data Factory, Azure Storage,
-            Azure SQL, Python, Event Hubs</p>
-          <a href="https://github.com/imdhilipkumar"
-             target="_blank" rel="noopener">View project repository →</a>
+    <section class="section" id="skills">
+      <p class="section-label">02 / TECHNICAL TOOLKIT</p>
+      <div class="section-heading">
+        <h2>Tools I work with<span class="accent">.</span></h2>
+        <p>Core technologies for building, transforming, and validating data.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-heading"><span class="skill-icon azure">Az</span><div><h3>Azure & Cloud</h3><p>Cloud data services</p></div></div>
+          <div class="tags"><span>Azure Data Factory</span><span>Azure Blob Storage</span><span>Azure Event Hubs</span><span>Azure SQL</span></div>
         </article>
-
-        <article class="card">
-          <h3>PySpark Data Processing</h3>
-          <p>
-            Document a data processing project covering transformations,
-            data quality checks, partitioning and efficient processing
-            of larger datasets.
-          </p>
-          <p><strong>Tools:</strong> Python, PySpark, SQL</p>
-          <a href="https://github.com/imdhilipkumar"
-             target="_blank" rel="noopener">Explore GitHub →</a>
+        <article class="skill-card">
+          <div class="skill-heading"><span class="skill-icon purple-bg">⌘</span><div><h3>Programming & Querying</h3><p>Data processing</p></div></div>
+          <div class="tags"><span>SQL</span><span>Python</span><span>PySpark</span><span>Spark SQL</span></div>
         </article>
-
-        <article class="card">
-          <h3>Data Analytics Project</h3>
-          <p>
-            Showcase an analytics project with data cleaning,
-            exploratory analysis, SQL queries and business insights.
-          </p>
-          <p><strong>Tools:</strong> Python, SQL, Visualization</p>
-          <a href="https://github.com/imdhilipkumar"
-             target="_blank" rel="noopener">Explore GitHub →</a>
+        <article class="skill-card">
+          <div class="skill-heading"><span class="skill-icon cyan-bg">⟳</span><div><h3>Data Engineering</h3><p>Pipeline development</p></div></div>
+          <div class="tags"><span>ETL / ELT</span><span>Incremental Loads</span><span>Data Quality</span><span>JSON</span><span>Parquet</span></div>
         </article>
-      </div>
-      <p style="margin-top:18px">
-        Replace each GitHub link with the actual repository for that
-        project. Only publish projects and skills you can explain.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Let's Connect</h2>
-      <p>I'm interested in Data Engineer and Azure Data Engineer opportunities.</p>
-      <div class="buttons">
-        <a class="btn" href="https://linkedin.com/in/dhilipkumar20"
-           target="_blank" rel="noopener">Connect on LinkedIn</a>
-        <a class="btn" href="https://github.com/imdhilipkumar"
-           target="_blank" rel="noopener">GitHub</a>
+        <article class="skill-card">
+          <div class="skill-heading"><span class="skill-icon green-bg">⌁</span><div><h3>Tools & Analytics</h3><p>Analysis and collaboration</p></div></div>
+          <div class="tags"><span>Git & GitHub</span><span>Amazon S3</span><span>Amazon Redshift</span><span>Amazon Athena</span><span>QuickSight</span></div>
+        </article>
       </div>
     </section>
 
-    <footer>
-      © 2026 Dhilip Kumar · Data Engineering Portfolio
-    </footer>
-  </div>
+    <section class="section" id="projects">
+      <p class="section-label">03 / FEATURED PROJECT</p>
+      <div class="section-heading">
+        <h2>Built to move data<span class="accent">.</span></h2>
+        <p>From incoming events to validated and structured data.</p>
+      </div>
+
+      <article class="project-card">
+        <div class="project-content">
+          <p class="project-label">✳ END-TO-END DATA ENGINEERING <span>PROJECT 001</span></p>
+          <h3>PureMilk — Azure Data Engineering Pipeline</h3>
+          <p class="body-text">An end-to-end Smart Dairy Milk Silo pipeline demonstrating event ingestion, data validation, transformation, incremental processing, and loading data into Azure SQL.</p>
+          <div class="tags project-tags">
+            <span>Azure Data Factory</span><span>Event Hubs</span><span>Blob Storage</span><span>Azure SQL</span><span>Python</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://github.com/imdhilipkumar/PureMilk-Azure-Data-Engineering" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a>
+            <a class="text-link" href="https://github.com/imdhilipkumar/PureMilk-Azure-Data-Engineering#readme" target="_blank" rel="noopener noreferrer">Read documentation ↗</a>
+          </div>
+        </div>
+
+        <div class="architecture">
+          <div class="architecture-heading"><span>PIPELINE ARCHITECTURE</span><span class="green-text">● OVERVIEW</span></div>
+          <div class="arch-node"><span class="arch-icon">⇢</span><div><strong>Milk Silo Events</strong><small>Source data</small></div></div>
+          <div class="arch-line"></div>
+          <div class="arch-node"><span class="arch-icon purple">⌁</span><div><strong>Azure Event Hubs</strong><small>Event ingestion</small></div></div>
+          <div class="arch-line"></div>
+          <div class="arch-node"><span class="arch-icon">▤</span><div><strong>Azure Blob Storage</strong><small>Landing / raw files</small></div></div>
+          <div class="arch-line"></div>
+          <div class="arch-node"><span class="arch-icon cyan">⟳</span><div><strong>Azure Data Factory</strong><small>Validate & transform</small></div></div>
+          <div class="arch-line"></div>
+          <div class="arch-node final-node"><span class="arch-icon green">▦</span><div><strong>Azure SQL</strong><small>Final data & watermark</small></div></div>
+          <div class="arch-footer"><span>INGEST</span><span>PROCESS</span><span>LOAD</span></div>
+        </div>
+      </article>
+      <div class="project-note"><span>↳</span><p><strong>Key engineering concepts</strong><br>Data validation, rejected-record handling, orchestration, incremental processing, and watermark management.</p></div>
+    </section>
+
+    <section class="section" id="experience">
+      <p class="section-label">04 / CAREER</p>
+      <div class="section-heading">
+        <h2>Experience & education<span class="accent">.</span></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">APR 2024 — NOV 2024</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="role-label">PROFESSIONAL EXPERIENCE</p>
+            <h3>Data Analyst I — Prime Video Sports</h3>
+            <p class="company">Adecco · Client: Amazon Development Center, Chennai</p>
+            <ul>
+              <li>Worked with sports data workflows and data quality checks to support reliable operational datasets.</li>
+              <li>Used SQL joins, CTEs, window functions, and aggregations to query and validate data.</li>
+              <li>Applied Python and analytics tools to support data workflows and reporting.</li>
+            </ul>
+            <div class="tags"><span>SQL</span><span>Python</span><span>Amazon Redshift</span><span>Amazon S3</span><span>Amazon Athena</span><span>QuickSight</span></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">MAY 2018 — MAY 2023</div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="role-label">EDUCATION</p>
+            <h3>M.Tech (Integrated), Software Engineering</h3>
+            <p class="company">VIT University, Chennai</p>
+            <p class="body-text">Graduated May 2023 · GPA 7.70 / 10</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section contact-inner">
+        <p class="section-label">05 / GET IN TOUCH</p>
+        <h2>Let's build something<br><span class="gradient">data-driven.</span></h2>
+        <p class="body-text">I'm interested in Data Engineer and Azure Data Engineer opportunities where I can build reliable pipelines and continue growing my engineering skills.</p>
+        <div class="actions center-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/dhilipkumar20/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/imdhilipkumar" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-mark">DK</span> dhilip<span class="accent">.</span></a>
+    <span>Built around data. Designed with purpose.</span>
+    <a href="#home">Back to top ↑</a>
+    <span>© <span id="year"></span> Dhilip Kumar</span>
+  </footer>
 </body>
 </html>
-
