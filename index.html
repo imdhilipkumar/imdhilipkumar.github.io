@@ -427,11 +427,11 @@
 
     .project-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      grid-template-columns: 1fr;
+      gap: 22px;
     }
 
-    .project-card.featured { grid-column: 1 / -1; }
+    .project-card.featured { grid-column: auto; }
 
     .project-top {
       display: flex;
@@ -660,7 +660,7 @@
     .decision-box ul { padding-left: 17px; color: var(--muted); font-size: 12px; }
     .decision-box li { margin: 6px 0; }
     .repo-pending { font: 11px "DM Mono", monospace; color: var(--muted); border: 1px dashed var(--line); border-radius: 7px; padding: 9px 12px; }
-    .project-card.featured { grid-column: 1 / -1; }
+    .project-card.featured { grid-column: auto; }
     @media (max-width: 560px) { .project-card.featured { grid-column: auto; } }
 </style>
 </head>
