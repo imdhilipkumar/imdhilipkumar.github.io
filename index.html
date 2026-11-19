@@ -1,18 +1,17 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d17">
-  <meta name="description" content="Dhilip Kumar — Azure Data Engineer working with Azure Data Factory, SQL, Python, PySpark and cloud data pipelines.">
-  <title>Dhilip Kumar | Azure Data Engineer</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#080d17" name="theme-color"/>
+<meta content="Dhilip Kumar — Azure Data Engineer working with Azure Data Factory, SQL, Python, PySpark and cloud data pipelines." name="description"/>
+<title>Dhilip Kumar | Azure Data Engineer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --bg: #080d17;
       --panel: #101827;
@@ -653,433 +652,165 @@
       .pipeline-mini { gap: 6px; padding: 11px; }
       .pipeline-mini span { font-size: 9px; }
     }
-  </style>
+  
+    .engineering-list { padding-left: 19px; margin: 15px 0 20px; color: var(--muted); font-size: 13px; line-height: 1.85; }
+    .engineering-list li { margin-bottom: 10px; }
+    .decision-box { margin-top: 20px; padding: 17px 18px; border: 1px solid #315071; background: #0b1a28; border-radius: 10px; }
+    .decision-box h4 { font: 11px "DM Mono", monospace; letter-spacing: 1px; color: var(--cyan); margin-bottom: 10px; }
+    .decision-box ul { padding-left: 17px; color: var(--muted); font-size: 12px; }
+    .decision-box li { margin: 6px 0; }
+    .repo-pending { font: 11px "DM Mono", monospace; color: var(--muted); border: 1px dashed var(--line); border-radius: 7px; padding: 9px 12px; }
+    .project-card.featured { grid-column: 1 / -1; }
+    @media (max-width: 560px) { .project-card.featured { grid-column: auto; } }
+</style>
 </head>
-
 <body>
-  <header class="header">
-    <div class="nav-wrap">
-      <a class="brand" href="#home" aria-label="Dhilip Kumar home">
-        <span class="brand-icon">DK</span>
+<header class="header">
+<div class="nav-wrap">
+<a aria-label="Dhilip Kumar home" class="brand" href="#home">
+<span class="brand-icon">DK</span>
         Dhilip Kumar<span class="accent">.</span>
-      </a>
-
-      <button class="menu-btn" id="menuBtn"
-        aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a class="contact-link" href="#contact">Contact ↗</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="container hero" id="home">
-      <div class="hero-copy reveal">
-        <div class="eyebrow">
-          <span class="status-dot"></span>
-          AZURE DATA ENGINEER
-        </div>
-
-        <h1>
-          Hi, I'm Dhilip Kumar.
-          <span class="gradient">I build data pipelines.</span>
-        </h1>
-
-        <p class="hero-description">
-          I work with <strong>Azure Data Factory, SQL, Python and PySpark</strong>
-          to ingest, transform and validate data. I'm focused on building
-          reliable data workflows and turning raw data into analytics-ready datasets.
-        </p>
-
-        <div class="actions">
-          <a class="btn btn-primary" href="#projects">Explore my work ↘</a>
-          <a class="btn btn-secondary"
-             href="https://github.com/imdhilipkumar"
-             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        </div>
-
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/dhilipkumar20"
-             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com/imdhilipkumar"
-             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="#contact">Get in touch ↘</a>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="photo-frame">
-          <img class="profile-photo"
-               src="assets/profile.png"
-               alt="Dhilip Kumar, Azure Data Engineer"
-               onerror="this.style.opacity='0'; this.style.background='linear-gradient(145deg,#203c59,#101827)'">
-
-          <div class="photo-index">DATA / ENGINEERING</div>
-
-          <div class="photo-caption">
-            <strong>Dhilip Kumar</strong>
-            <span>Azure · SQL · Python · PySpark</span>
-          </div>
-        </div>
-        <div class="hero-note">BUILDING · LEARNING · IMPROVING</div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="content-section" id="about">
-      <div class="container reveal">
-        <p class="section-label">01 / ABOUT ME</p>
-
-        <div class="about-grid">
-          <h2 class="about-title">
-            A data professional focused on
-            <span class="accent">engineering better data flows.</span>
-          </h2>
-
-          <div class="about-copy">
-            <p>
-              I'm Dhilip Kumar, a software engineering graduate from
-              VIT Chennai with professional experience as a Data Analyst I
-              supporting Amazon Development Center through Adecco.
-            </p>
-            <p>
-              My work with data analysis and SQL strengthened my interest in
-              the engineering behind reliable data. I'm developing that
-              foundation through hands-on projects using Azure Data Factory,
-              Python, SQL, PySpark and cloud storage.
-            </p>
-            <p>
-              One of my key projects is <strong>PureMilk — an end-to-end
-              Smart Dairy Milk Silo data pipeline.</strong> It brings together
-              event ingestion, data validation, transformation, incremental
-              processing and Azure SQL.
-            </p>
-            <p>
-              I'm interested in Data Engineer opportunities where I can
-              contribute to data pipelines, improve data quality and continue
-              growing as an engineer.
-            </p>
-
-            <div class="fact-grid">
-              <div class="fact">
-                <strong>Azure</strong>
-                <span>Cloud data services</span>
-              </div>
-              <div class="fact">
-                <strong>ETL</strong>
-                <span>Ingestion & transformation</span>
-              </div>
-              <div class="fact">
-                <strong>SQL</strong>
-                <span>Querying & validation</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="content-section" id="skills">
-      <div class="container reveal">
-        <p class="section-label">02 / TECHNICAL TOOLKIT</p>
-
-        <div class="section-heading">
-          <h2>Technologies I work with<span class="accent">.</span></h2>
-          <p class="section-intro">
+</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="menu-btn" id="menuBtn">☰</button>
+<nav class="nav" id="nav">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a data-resume-link="" href="assets/Dhilip_Kumar_Resume.pdf" rel="noopener noreferrer" target="_blank">Resume ↗</a><a class="contact-link" href="#contact">Contact ↗</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="container hero" id="home">
+<div class="hero-copy reveal">
+<div class="eyebrow"><span class="status-dot"></span>DATA ENGINEER · AZURE · PYSPARK · SQL</div>
+<h1>Hi, I'm Dhilip Kumar.<span class="gradient">I design reliable, incremental data pipelines.</span></h1>
+<p class="hero-description">Software engineering graduate (VIT Chennai) and former Amazon Prime Video Sports data operations analyst building fault-tolerant ETL/ELT workflows, medallion lakehouses, and analytics-ready data models with <strong>Azure Data Factory, PySpark, SQL, and Python.</strong></p>
+<div class="actions"><a class="btn btn-primary" href="#projects">Explore my work ↘</a><a class="btn btn-secondary" href="https://github.com/imdhilipkumar" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a class="btn btn-secondary" data-resume-link="" href="assets/Dhilip_Kumar_Resume.pdf" rel="noopener noreferrer" target="_blank">Resume ↗</a></div>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/dhilipkumar20" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/imdhilipkumar" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="#contact">Get in touch ↘</a>
+</div>
+</div>
+<div class="hero-visual reveal">
+<div class="photo-frame">
+<img alt="Dhilip Kumar, Azure Data Engineer" class="profile-photo" onerror="this.style.opacity='0'; this.style.background='linear-gradient(145deg,#203c59,#101827)'" src="assets/profile.png"/>
+<div class="photo-index">DATA / ENGINEERING</div>
+<div class="photo-caption">
+<strong>Dhilip Kumar</strong>
+<span>Azure · SQL · Python · PySpark</span>
+</div>
+</div>
+<div class="hero-note">BUILDING · LEARNING · IMPROVING</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="content-section" id="about">
+<div class="container reveal">
+<p class="section-label">01 / ABOUT ME</p>
+<div class="about-grid">
+<h2 class="about-title">Building <span class="accent">reliable data systems</span> from ingestion to analytics.</h2>
+<div class="about-copy"><p>I am a Data Engineer with an Integrated M.Tech in Software Engineering from VIT Chennai and production data operations experience supporting Amazon Development Center (Prime Video Sports) via Adecco.</p><p>In production, I validated <strong>10,000+ weekly records</strong> in Amazon Redshift with <strong>99.9% data integrity</strong>, automated Python/SQL workflows to cut reporting latency by <strong>25%</strong>, lowered defect rates by <strong>20%</strong>, and raised downstream ML dataset quality from <strong>88% to 95%</strong>.</p><p>Today, I focus on building <strong>idempotent, watermark-driven pipelines</strong>, quarantining bad records cleanly, and modeling medallion &amp; dimensional datasets for reliable downstream analytics and ML.</p><div class="fact-grid"><div class="fact"><strong>10,000+</strong><span>Weekly records validated</span></div><div class="fact"><strong>25%</strong><span>Reporting latency reduction</span></div><div class="fact"><strong>20%</strong><span>Fewer defects</span></div></div></div>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="content-section" id="skills">
+<div class="container reveal">
+<p class="section-label">02 / TECHNICAL TOOLKIT</p>
+<div class="section-heading">
+<h2>Technologies I work with<span class="accent">.</span></h2>
+<p class="section-intro">
             Tools used in my professional data analysis work and
             hands-on data engineering practice.
           </p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3 class="skill-title">Azure & Cloud</h3>
-            <p class="skill-subtitle">Cloud data pipelines and storage</p>
-            <div class="tags">
-              <span>Azure Data Factory</span>
-              <span>Azure Blob Storage</span>
-              <span>Azure Event Hubs</span>
-              <span>Azure SQL</span>
-            </div>
-          </article>
-
-          <article class="skill-card">
-            <h3 class="skill-title">Programming & Querying</h3>
-            <p class="skill-subtitle">Processing, querying and automation</p>
-            <div class="tags">
-              <span>SQL</span>
-              <span>Python</span>
-              <span>PySpark</span>
-              <span>Spark SQL</span>
-            </div>
-          </article>
-
-          <article class="skill-card">
-            <h3 class="skill-title">Data Engineering</h3>
-            <p class="skill-subtitle">Data movement and quality</p>
-            <div class="tags">
-              <span>ETL / ELT</span>
-              <span>Incremental Loading</span>
-              <span>Data Validation</span>
-              <span>JSON</span>
-              <span>Parquet</span>
-            </div>
-          </article>
-
-          <article class="skill-card">
-            <h3 class="skill-title">Analytics & Tools</h3>
-            <p class="skill-subtitle">Analysis and development workflow</p>
-            <div class="tags">
-              <span>Amazon Redshift</span>
-              <span>Amazon S3</span>
-              <span>Amazon Athena</span>
-              <span>Amazon QuickSight</span>
-              <span>Git</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="content-section" id="projects">
-      <div class="container reveal">
-        <p class="section-label">03 / SELECTED PROJECTS</p>
-
-        <div class="section-heading">
-          <h2>Built with data in mind<span class="accent">.</span></h2>
-          <p class="section-intro">
-            Practical projects demonstrating data ingestion,
-            transformation, validation and analytics.
-          </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-top">
-              <div>
-                <p class="project-number">PROJECT_01 / FEATURED</p>
-                <h3>PureMilk — Azure Data Engineering Pipeline</h3>
-                <p class="project-type">Smart Dairy Milk Silo · End-to-end data engineering</p>
-              </div>
-              <div class="project-symbol">AZ</div>
-            </div>
-
-            <p>
-              Built a data pipeline for milk silo sensor records, from event
-              ingestion through validation and transformation to analytics-ready
-              data. The workflow uses Azure Event Hubs, Azure Storage,
-              Azure Data Factory and Azure SQL. It includes handling invalid
-              records, incremental processing and watermark tracking.
-            </p>
-
-            <div class="pipeline-mini" aria-label="Project pipeline flow">
-              <span>Event Hubs</span><b>→</b>
-              <span>Blob Storage</span><b>→</b>
-              <span>ADF</span><b>→</b>
-              <span>Validate & Transform</span><b>→</b>
-              <span>Azure SQL</span>
-            </div>
-
-            <div class="tags">
-              <span>Azure Data Factory</span>
-              <span>Azure Event Hubs</span>
-              <span>Azure Blob Storage</span>
-              <span>Azure SQL</span>
-              <span>Python</span>
-              <span>ETL</span>
-              <span>Watermarking</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/imdhilipkumar/PureMilk-Azure-Data-Engineering"
-                 target="_blank" rel="noopener noreferrer">View source code ↗</a>
-              <a href="https://github.com/imdhilipkumar"
-                 target="_blank" rel="noopener noreferrer">More on GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-number">PROJECT_02</p>
-                <h3>Walmart Sales Analysis</h3>
-                <p class="project-type">Data analysis & business insights</p>
-              </div>
-              <div class="project-symbol">SQL</div>
-            </div>
-
-            <p>
-              Analyzed retail sales data to explore sales performance,
-              profitability and business trends using data analysis
-              and visualization techniques.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>SQL</span>
-              <span>Data Analysis</span>
-              <span>Visualization</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/imdhilipkumar?tab=repositories"
-                 target="_blank" rel="noopener noreferrer">Browse repositories ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <p class="project-number">PROJECT_03</p>
-                <h3>Customer Churn Analysis</h3>
-                <p class="project-type">Analytics & machine learning</p>
-              </div>
-              <div class="project-symbol">PY</div>
-            </div>
-
-            <p>
-              Explored customer churn patterns, prepared data for analysis,
-              and built a predictive modeling workflow with an interactive
-              Streamlit interface.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>Machine Learning</span>
-              <span>Streamlit</span>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/imdhilipkumar?tab=repositories"
-                 target="_blank" rel="noopener noreferrer">Browse repositories ↗</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="content-section" id="experience">
-      <div class="container reveal">
-        <p class="section-label">04 / PROFESSIONAL EXPERIENCE</p>
-
-        <div class="section-heading">
-          <h2>My experience<span class="accent">.</span></h2>
-          <p class="section-intro">
-            Professional experience in data analysis and data quality.
-          </p>
-        </div>
-
-        <div class="experience-list">
-          <article class="experience-card">
-            <div class="experience-date">APR 2024 — NOV 2024</div>
-            <div>
-              <h3>Data Analyst I — Prime Video Sports</h3>
-              <div class="experience-company">
-                Adecco · Client: Amazon Development Center, Chennai
-              </div>
-              <p>
-                Worked with SQL queries, data validation and reporting for
-                Prime Video Sports data workflows. Experience included
-                querying structured data, supporting data quality checks
-                and working with analytics tools and datasets.
-              </p>
-              <div class="tags" style="margin-top:15px">
-                <span>SQL</span>
-                <span>Python</span>
-                <span>Amazon Redshift</span>
-                <span>Amazon S3</span>
-                <span>Amazon Athena</span>
-                <span>QuickSight</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="content-section" id="education">
-      <div class="container reveal">
-        <p class="section-label">05 / EDUCATION</p>
-
-        <div class="education-card">
-          <div>
-            <h3>M.Tech (Integrated) — Software Engineering</h3>
-            <p>Vellore Institute of Technology (VIT), Chennai</p>
-            <p>GPA: 7.70 / 10</p>
-          </div>
-          <div class="education-year">GRADUATED · 2023</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="content-section" id="contact">
-      <div class="container reveal">
-        <div class="contact-panel">
-          <div>
-            <p class="section-label">06 / CONTACT</p>
-            <h2>Let's talk data<span class="accent">.</span></h2>
-            <p>
+</div>
+<div class="skills-grid"><article class="skill-card"><h3 class="skill-title">Azure &amp; Cloud</h3><p class="skill-subtitle">Orchestration, compute, ingestion and storage</p><div class="tags"><span>Azure Data Factory</span><span>Azure Databricks</span><span>ADLS Gen2</span><span>Azure Event Hubs</span><span>Azure SQL Database</span></div></article><article class="skill-card"><h3 class="skill-title">Programming &amp; Distributed Processing</h3><p class="skill-subtitle">Transformation and automation</p><div class="tags"><span>SQL</span><span>Python</span><span>PySpark</span><span>Spark SQL</span></div></article><article class="skill-card"><h3 class="skill-title">Data Engineering &amp; Modeling</h3><p class="skill-subtitle">Incremental pipelines and trustworthy data</p><div class="tags"><span>ETL / ELT</span><span>Watermarking</span><span>Idempotent Upserts</span><span>Medallion Architecture</span><span>Dimensional Modeling</span><span>Delta Lake</span><span>Parquet</span><span>Data Quality</span></div></article><article class="skill-card"><h3 class="skill-title">Platforms &amp; Developer Tools</h3><p class="skill-subtitle">Production analytics and version control</p><div class="tags"><span>Amazon Redshift</span><span>Amazon S3</span><span>Amazon Athena</span><span>Amazon QuickSight</span><span>Git</span><span>JSON / CSV</span></div></article></div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="content-section" id="projects">
+<div class="container reveal">
+<p class="section-label">03 / SELECTED PROJECTS</p>
+<div class="section-heading">
+<h2>Built with data in mind<span class="accent">.</span></h2>
+<p class="section-intro">Engineering projects demonstrating incremental ingestion, data quality, idempotent processing, medallion architecture and analytics-ready models.</p>
+</div>
+<div class="project-grid"><article class="project-card featured"><div class="project-top"><div><p class="project-number">PROJECT_01 / FEATURED</p><h3>Smart Dairy Milk Silo Data Pipeline</h3><p class="project-type">IoT Telemetry · Watermarked Incremental ETL · Quarantined Error Handling</p></div><div class="project-symbol">AZ</div></div><div aria-label="Project pipeline flow" class="pipeline-mini"><span>Storage Event Trigger</span><b>→</b><span>ADF Lookup / Metadata / ForEach</span><b>→</b><span>Mapping Data Flows</span><b>→</b><span>ADLS Gen2 Parquet</span><b>→</b><span>Azure SQL Upsert</span></div><ul class="engineering-list"><li>Engineered an event-driven ingestion and transformation pipeline for sensor telemetry across 5 dairy milk silos, structured around Bronze, Silver, and Gold zones on ADLS Gen2 plus a dedicated error quarantine layer.</li><li>Built SQL watermark-based incremental loading (Lookup, Get Metadata, Filter, ForEach, and stored procedures) so each run processes only newly arrived sensor payloads without reprocessing historical data.</li><li>Enforced schema/type casting, range validation, and deduplication by sample ID inside Mapping Data Flows, routing malformed records to an error sink for audit and replay while preventing pipeline failures.</li><li>Designed safe, repeatable reruns using idempotent upsert logic on sample ID into Azure SQL Database and automated cleanup of processed staging files.</li></ul><div class="tags"><span>Azure Data Factory</span><span>ADLS Gen2</span><span>Azure SQL Database</span><span>Mapping Data Flows</span><span>SQL Watermarking</span><span>Parquet</span><span>JSON</span></div><div class="decision-box"><h4>WHY THIS DESIGN?</h4><ul><li>Parquet supports compressed, columnar analytical reads compared with raw CSV/JSON.</li><li>Watermarking limits repeated extraction; sample-ID upserts make retries repeatable.</li></ul></div><div class="project-links"><a href="https://github.com/imdhilipkumar/PureMilk-Azure-Data-Engineering" rel="noopener noreferrer" target="_blank">View source code ↗</a></div></article><article class="project-card"><div class="project-top"><div><p class="project-number">PROJECT_02</p><h3>Retail Order Processing: Multi-Source Incremental Pipeline</h3><p class="project-type">Multi-Source Consolidation · Nested JSON Flattening · Idempotent Upserts</p></div><div class="project-symbol">SQL</div></div><div aria-label="Project pipeline flow" class="pipeline-mini"><span>In-Store CSV + Web JSON</span><b>→</b><span>ADLS Gen2</span><b>→</b><span>ADF Transformations &amp; Assertions</span><b>→</b><span>Curated Parquet</span><b>→</b><span>Azure SQL Orders</span></div><ul class="engineering-list"><li>Unified multi-channel sales data by ingesting in-store CSV batch files and nested e-commerce JSON order payloads into a single curated orders store in Azure SQL Database.</li><li>Implemented per-source watermark tracking and composite-key upsert logic (invoice_number, line_number, source_channel) so out-of-order arrivals and pipeline reruns never create duplicate orders.</li><li>Added explicit data-quality assertions and error-split sinks to catch type mismatches and invalid order statuses early, protecting downstream BI and reporting tables.</li><li>Standardized heterogeneous inputs into compressed Parquet datasets and clean relational structures optimized for analytical queries.</li></ul><div class="tags"><span>Azure Data Factory</span><span>ADLS Gen2</span><span>Azure SQL Database</span><span>Mapping Data Flows</span><span>SQL</span><span>Parquet</span><span>JSON</span><span>CSV</span></div><div class="decision-box"><h4>WHY THIS DESIGN?</h4><ul><li>Per-source watermarks track independent arrival patterns for store and web orders.</li><li>Composite-key upserts prevent duplicate order lines on reruns; Parquet supports efficient curated reads.</li></ul></div><div class="project-links"><span class="repo-pending">Repository link to be added</span></div></article><article class="project-card"><div class="project-top"><div><p class="project-number">PROJECT_03</p><h3>Enterprise Omnichannel &amp; IoT Telemetry Lakehouse</h3><p class="project-type">Medallion Lakehouse · PySpark &amp; Delta / Spark SQL · Batch + Event Streaming</p></div><div class="project-symbol">SP</div></div><div aria-label="Project pipeline flow" class="pipeline-mini"><span>Event Hubs &amp; Batch Feeds</span><b>→</b><span>Bronze Raw Append</span><b>→</b><span>Silver Clean / Deduplicate / SCD</span><b>→</b><span>Gold Analytics &amp; ML Marts</span></div><ul class="engineering-list"><li>Designed a scalable Bronze–Silver–Gold medallion lakehouse combining batch operational feeds and real-time event streams into consistent analytical and ML-ready tables.</li><li>Implemented deterministic deduplication, late-arriving record handling, and schema standardization in PySpark / Spark SQL so downstream consumers query trusted, partitioned datasets.</li><li>Separated raw immutable ingestion from curated business/ML layers and isolated bad records so schema drift or upstream spikes do not break gold-layer reporting.</li><li>Engineering focus: Built to demonstrate distributed transformation logic, partition/file layout discipline, and idempotent reprocessing alongside ADF/Azure SQL pipelines.</li></ul><div class="tags"><span>PySpark</span><span>Spark SQL</span><span>Python</span><span>Azure Event Hubs</span><span>ADLS Gen2</span><span>Azure Data Factory</span><span>Delta / Parquet</span><span>Git</span></div><div class="decision-box"><h4>WHY THIS DESIGN?</h4><ul><li>Immutable Bronze data supports replay and audit; Silver isolates cleaning and deduplication.</li><li>Delta supports transactional updates while partition/file layout choices affect Spark query performance.</li></ul></div><div class="project-links"><span class="repo-pending">Repository link to be added</span></div></article></div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section class="content-section" id="experience">
+<div class="container reveal">
+<p class="section-label">04 / PROFESSIONAL EXPERIENCE</p>
+<div class="section-heading">
+<h2>My experience<span class="accent">.</span></h2>
+<p class="section-intro">Production data reliability, SQL/Python automation, root-cause analysis and analytics operations.</p>
+</div>
+<div class="experience-list"><article class="experience-card"><div class="experience-date">APR 2024 — NOV 2024</div><div><h3>Data Analyst I — Prime Video Sports</h3><div class="experience-company">Adecco (Client: Amazon Development Center, Chennai)</div><ul class="engineering-list"><li>Validated 10,000+ weekly production records in Amazon Redshift using complex SQL CTEs, window functions, and multi-table joins, sustaining 99.9% data integrity for Prime Video Sports reporting.</li><li>Automated recurring data-prep and reporting pipelines using Python and SQL, cutting reporting latency by 25% and eliminating manual spreadsheet steps.</li><li>Performed root-cause and trend analysis on data-quality exceptions and operational defects, reducing defect rates by 20%.</li><li>Curated and validated structured training/evaluation datasets for downstream machine learning, raising dataset quality from 88% to 95%.</li><li>Built S3 + Athena extraction/validation checks and Amazon QuickSight operational dashboards to speed up incident triage and KPI visibility.</li></ul><div class="tags" style="margin-top:15px"><span>SQL</span><span>Python</span><span>Amazon Redshift</span><span>Amazon S3</span><span>Amazon Athena</span><span>QuickSight</span></div></div></article></div>
+</div>
+</section>
+<!-- EDUCATION -->
+<section class="content-section" id="education">
+<div class="container reveal">
+<p class="section-label">05 / EDUCATION</p>
+<div class="education-card">
+<div>
+<h3>M.Tech (Integrated) — Software Engineering</h3>
+<p>Vellore Institute of Technology (VIT), Chennai</p>
+<p>GPA: 7.70 / 10</p>
+</div>
+<div class="education-year">GRADUATED · 2023</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="content-section" id="contact">
+<div class="container reveal">
+<div class="contact-panel">
+<div>
+<p class="section-label">06 / CONTACT</p>
+<h2>Let's talk data<span class="accent">.</span></h2>
+<p>
               I'm interested in Data Engineer opportunities where I can
               work on data pipelines, cloud data platforms and reliable
               data processing. Feel free to connect with me.
             </p>
-
-            <p style="margin-top: 18px;">
-              <strong style="color: var(--text);">Email:</strong>
-              <a href="mailto:dhilipkumar.tech@gmail.com"
-                 style="color: var(--cyan);">
+<p style="margin-top: 18px;">
+<strong style="color: var(--text);">Email:</strong>
+<a href="mailto:dhilipkumar.tech@gmail.com" style="color: var(--cyan);">
                 dhilipkumar.tech@gmail.com
               </a>
-            </p>
-
-            <p style="margin-top: 8px;">
-              <strong style="color: var(--text);">Phone:</strong>
-              <a href="tel:+916379557661"
-                 style="color: var(--cyan);">
+</p>
+<p style="margin-top: 8px;">
+<strong style="color: var(--text);">Phone:</strong>
+<a href="tel:+916379557661" style="color: var(--cyan);">
                 +91 6379557661
               </a>
-            </p>
-          </div>
-
-          <div class="actions" style="margin-top:0">
-            <a class="btn btn-primary"
-               href="mailto:dhilipkumar.tech@gmail.com">Email Me ↗</a>
-            <a class="btn btn-secondary"
-               href="tel:+916379557661">Call Me ↗</a>
-            <a class="btn btn-secondary"
-               href="https://www.linkedin.com/in/dhilipkumar20"
-               target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
-            <a class="btn btn-secondary"
-               href="https://github.com/imdhilipkumar"
-               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Dhilip Kumar</span>
-      <span>Designed & built with HTML, CSS and JavaScript.</span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <script>
+</p>
+</div>
+<div class="actions" style="margin-top:0"><a class="btn btn-secondary" data-resume-link="" href="assets/Dhilip_Kumar_Resume.pdf" rel="noopener noreferrer" target="_blank">Resume ↗</a>
+<a class="btn btn-primary" href="mailto:dhilipkumar.tech@gmail.com">Email Me ↗</a>
+<a class="btn btn-secondary" href="tel:+916379557661">Call Me ↗</a>
+<a class="btn btn-secondary" href="https://www.linkedin.com/in/dhilipkumar20" rel="noopener noreferrer" target="_blank">Connect on LinkedIn ↗</a>
+<a class="btn btn-secondary" href="https://github.com/imdhilipkumar" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-inner">
+<span>© <span id="year"></span> Dhilip Kumar</span>
+<span>Designed &amp; built with HTML, CSS and JavaScript.</span>
+<a href="#home">Back to top ↑</a>
+</div>
+</footer>
+<script>
     // Mobile navigation
     const menuBtn = document.getElementById("menuBtn");
     const nav = document.getElementById("nav");
@@ -1141,5 +872,14 @@
       sections.forEach(section => sectionObserver.observe(section));
     }
   </script>
-</body>
+<script>
+// Resume buttons are activated after the PDF is added to assets/.
+// Remove data-resume-link from the anchors once the PDF has been uploaded.
+document.querySelectorAll('[data-resume-link]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    alert('Resume PDF will be available soon. Please contact me by email for a copy.');
+  });
+});
+</script></body>
 </html>
